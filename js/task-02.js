@@ -16,3 +16,13 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+const ulRef = document.querySelector('ul')
+
+const markup = ingredients
+.map((ingredient) => `<li class="item">${ingredient}</li>`)
+.join("");
+
+console.log(markup);
+
+ulRef.innerHTML = markup;
