@@ -8,4 +8,21 @@
 //     категорії(усіх < li >, вкладених в нього).
 
 
+const allItemsNameRef = document.querySelectorAll('.item');
+console.log("Number of categories: ", allItemsNameRef.length);
+
+
+const subCategories = document.querySelectorAll('.item');
+
+const h2Ref =(element) => {
+    element.forEach(element => {
+        const firstElem = element.firstElementChild
+        console.log('Category: ', firstElem.textContent)
+        const siblingFirstEl = firstElem.nextElementSibling
+        const sibCildren = siblingFirstEl.children
+        console.log('Elements: ', sibCildren.length)
+    });
+}
+
+h2Ref(subCategories)
 
