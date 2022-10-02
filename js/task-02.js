@@ -17,6 +17,25 @@ const ingredients = [
   'Condiments',
 ];
 
+// const ingredientRef = document.querySelector('#ingredients')
+
+// const doneIngridients = ingredients => {
+//   return ingredients.map(ingredient => {
+//     const ingrRef = document.createElement('li')
+//     ingrRef.textContent = ingredient;
+//     ingrRef.classList.add('item')
+
+//     return ingrRef
+//   })
+// } 
+
+
+// const items = doneIngridients(ingredients)
+
+// ingredientRef.appendChild(...items)
+
+// console.log(ingredientRef)
+
 const ulRef = document.querySelector('ul')
 
 const markup = ingredients
@@ -26,3 +45,5 @@ const markup = ingredients
 console.log(markup);
 
 ulRef.innerHTML = markup;
+
+

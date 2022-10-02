@@ -24,3 +24,31 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
+const galleryRef = document.querySelector('.gallery')
+
+console.log(galleryRef)
+
+const markup = images.map(image => {
+  return `<li class = list><img src=${image.url} alt=${image.alt}/> </li>`
+}).join('')
+
+console.log(markup)
+
+galleryRef.insertAdjacentHTML('beforeend', markup)
+
+const imgRef = document.querySelectorAll('img')
+
+galleryRef.style.display = "flex";
+galleryRef.style.flexDirection = "column";
+galleryRef.style.listStyleType = "none";
+galleryRef.style.paddingLeft = "0px";
+
+
+
+imgRef.forEach((img) => {
+  img.setAttribute("width", 250)
+})
+
+
