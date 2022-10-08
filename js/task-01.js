@@ -13,6 +13,7 @@ console.log("Number of categories: ", allItemsNameRef.length);
 
 
 const subCategories = document.querySelectorAll('.item');
+// console.log(subCategories)
 
 const h2Ref =(element) => {
     element.forEach(element => {
