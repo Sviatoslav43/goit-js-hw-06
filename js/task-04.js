@@ -17,13 +17,26 @@ const valueItem = document.querySelector('span')
 // console.log(valueRef)
 
 let counterValue = 0
+decrementBtnRef.addEventListener('click', minusNumber)
 
-decrementBtnRef.addEventListener('click', () => {
-    counterValue -= 1; 
-    return valueItem.textContent = counterValue;
-})
+incrementBtnRef.addEventListener('click', addNumber)
 
-incrementBtnRef.addEventListener('click', () => {
-    counterValue += 1;
-    return valueItem.textContent = counterValue;
-})
+function minusNumber() {
+    counterValue -= 1;
+    return valueRef.textContent = counterValue;
+}
+
+function addNumber() {
+    counterValue += 1
+    return valueRef.textContent = counterValue
+}
+
+// decrementBtnRef.addEventListener('click', () => {
+//     counterValue -= 1; 
+//     return valueItem.textContent = counterValue;
+// })
+
+// incrementBtnRef.addEventListener('click', () => {
+//     counterValue += 1;
+//     return valueItem.textContent = counterValue;
+// })

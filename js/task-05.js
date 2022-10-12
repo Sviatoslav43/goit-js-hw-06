@@ -12,11 +12,22 @@ const inputRef = document.querySelector('input')
 const yourName = document.querySelector('#name-output')
 // console.log(yourName)
 
+inputRef.addEventListener('input', textForInput)
 
-inputRef.addEventListener("input", (event) => {
+function textForInput(event) {
     if (event.currentTarget.value === '') {
         return yourName.textContent = "Anonymous"
     }
-    return yourName.textContent = event.currentTarget.value;
- });
+
+    return yourName.textContent = event.target.value
+}
+
+
+
+// inputRef.addEventListener("input", (event) => {
+//     if (event.currentTarget.value === '') {
+//         return yourName.textContent = "Anonymous"
+//     }
+//     return yourName.textContent = event.currentTarget.value;
+//  });
 

@@ -40,6 +40,8 @@ const inputRef = document.querySelector('input')
 //     return inputRef.style.border = "3px solid red"
 // })
 
+
+
 inputRef.addEventListener('blur', (event)=> {
   if (event.currentTarget.value.length == lengthInputRef.dataset.length) {
     inputRef.classList.remove("invalid")
@@ -48,7 +50,5 @@ inputRef.addEventListener('blur', (event)=> {
     inputRef.classList.remove("valid")
     inputRef.classList.add("invalid")
   }
-
-  
 })
 

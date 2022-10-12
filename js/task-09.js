@@ -15,6 +15,6 @@ btnRef.addEventListener('click', () => {
 
   const body = document.querySelector('body')
 
-  return body.style.backgroundColor = getRandomHexColor()
+  return body.style.backgroundColor = colorRef.textContent
 })
 
