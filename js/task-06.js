@@ -28,7 +28,6 @@ const textInputRef = document.querySelector('#validation-input')
 const lengthInputRef = document.querySelector('[data-length = "6"]')
 const inputRef = document.querySelector('input')
 
-
 // inputRef.addEventListener('blur', (event) => {
  
 //   if (lengthInputRef.dataset.length == event.currentTarget.value.length) {

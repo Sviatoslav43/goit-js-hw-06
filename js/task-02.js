@@ -35,7 +35,7 @@ console.log(items)
 
 ingredientRef.append(...items)
 
-console.log(ingredientRef)
+// console.log(ingredientRef)
 
 // const ulRef = document.querySelector('ul')
 

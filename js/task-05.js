@@ -7,22 +7,27 @@
 // "Anonymous".
 
 const inputRef = document.querySelector('input')
-// console.log(inputRef)
+console.log(inputRef)
 
 const yourName = document.querySelector('#name-output')
-// console.log(yourName)
+console.log(yourName)
 
 inputRef.addEventListener('input', textForInput)
 
-function textForInput(event) {
-    if (event.currentTarget.value === '') {
+function textForInput(e) {
+    if (e.target.value === '') {
         return yourName.textContent = "Anonymous"
     }
-
-    return yourName.textContent = event.target.value
+   return yourName.textContent = inputRef.value 
 }
 
+// function textForInput(event) {
+//     if (event.currentTarget.value === '') {
+//         return yourName.textContent = "Anonymous"
+//     }
 
+//     return yourName.textContent = event.target.value
+// }
 
 // inputRef.addEventListener("input", (event) => {
 //     if (event.currentTarget.value === '') {

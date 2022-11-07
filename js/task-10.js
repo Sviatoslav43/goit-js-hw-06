@@ -15,6 +15,7 @@ const onCreateCounterInValueInput = value => {
 const onCreateBoxes = () => {
   let startBoxSizing = 30;
   let allDivsEl = [];
+  
   for (let i = 1; i <= valueToInput.getAttribute('counter'); i += 1) {
     startBoxSizing += 10;
     const createdDiv = document.createElement('div');

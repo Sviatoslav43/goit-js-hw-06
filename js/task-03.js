@@ -30,9 +30,13 @@ const galleryRef = document.querySelector('.gallery')
 
 console.log(galleryRef)
 
-const markup = images.map(image => {
-  return `<li class = list><img src=${image.url} alt=${image.alt}/> </li>`
-}).join('')
+const markup = images.reduce((acc, image) => {
+  return acc + `<li class = list><img src=${image.url} alt=${image.alt}></li>`
+}, '')
+
+// const markup = images.map(image => {
+//   return `<li class = list><img src=${image.url} alt=${image.alt}/> </li>`
+// }).join('')
 
 console.log(markup)
 
